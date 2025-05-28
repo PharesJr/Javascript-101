@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 100px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .btn-start {
+      background-color: #4caf50;
+    }
+
+    .btn-start:hover {
+      background-color: #45a049;
+    }
+
+    .btn-stop {
+      background-color: #f44336;
+    }
+
+    .btn-stop:hover {
+      background-color: #d32f2f;
+    }
+
+    .btn-reset {
+      background-color: #ff9800;
+    }
+
+    .btn-reset:hover {
+      background-color: #fb8c00;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Countdown Timer</h1>
+
+  <input type="number" id="timeInput" placeholder="Seconds" min="1" />
+
+  <div>
+    <button class="btn-start" onclick="startTimer()">Start</button>
+    <button class="btn-stop" onclick="stopTimer()">Stop</button>
+    <button class="btn-reset" onclick="resetTimer()">Reset</button>
+  </div>
+
+  <h2>Time Left: <span id="display">0</span> seconds</h2>
+
+  <script src="countdown.js"></script>
+</body>
+</html>

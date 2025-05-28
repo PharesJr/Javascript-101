@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .counter {
+      font-size: 3rem;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Increment button - green */
+    .btn-increment {
+      background-color: #4caf50;
+    }
+
+    .btn-increment:hover {
+      background-color: #45a049;
+    }
+
+    /* Decrement button - red */
+    .btn-decrement {
+      background-color: #f44336;
+    }
+
+    .btn-decrement:hover {
+      background-color: #d32f2f;
+    }
+
+    /* Reset button - orange */
+    .btn-reset {
+      background-color: #ff9800;
+    }
+
+    .btn-reset:hover {
+      background-color: #fb8c00;
+    }
+
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <h1>Counter App</h1>
+  <div class="counter" id="countDisplay">0</div>
+
+  <button class="btn-increment" onclick="increment()">Add</button>
+  <button class="btn-decrement" onclick="decrement()">Remove</button>
+  <button class="btn-reset" onclick="reset()">Reset</button>
+
+  <script src="counter.js"></script>
+</body>
+</html>
